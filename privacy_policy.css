@@ -1,0 +1,46 @@
+/*Header-section*/
+
+.header{
+background-color: #00437F;
+width: 1700px;
+height: 102px;
+}
+
+.header_img{
+	width:355px;
+	height: auto;
+	padding-top: 15px;
+	/*padding-left: 231px;*/
+	padding-right:482px;
+}
+
+.outer_container {
+			width: 1467px;
+			margin-left: 231px;
+            display: flex;
+            align-items: center;
+        }
+.link_list{
+	display:flex;
+	list-style-type: none;
+	
+}
+
+ul li{
+	margin-right: 40px;
+	font-family: Mulish,sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+	text-align: center;
+
+}
+ul li:last-child {
+            margin-right: 0;
+        }
+		
+li a {
+	color: #FFFFFF
+}
+
+/*Hero-section*/
