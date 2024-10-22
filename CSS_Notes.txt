@@ -1,0 +1,99 @@
+CSS Notes
+==================================
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+You can also specify that only specific HTML elements should be affected by a class.
+
+element.class_name
+p.center {
+  text-align: center;
+  color: red;
+}
+
+
+HTML elements can also refer to more than one class.
+The universal selector (*) selects all HTML elements on the page.
+
+To group selectors, separate each selector with a comma. It will be better to group the selectors, to minimize the code.
+Note: Do not add a space between the property value (20) and the unit (px):
+size: 20px;
+
+There are three ways of inserting a style sheet:
+In these priority is always given to last css style:
+
+External CSS:
+--------------------------------------------------------------
+<link rel="stylesheet" href="mystyle.css">
+
+Internal CSS:
+--------------------------------------------------------------
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+
+
+Inline CSS:
+--------------------------------------------------------------
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+
+
+comments:
+---------------------
+<!--...--> html comments
+/**/ css comments
+
+
+border colour
+======================
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+
+colors
+================
+RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+rgb(255, 99, 71)
+#ff6347
+hsl(9, 100%, 64%)
+
+Same as color name "Tomato", but 50% transparent: rgba(255, 99, 71, 0.5)
+
+in css it is opacity: 0.5;
+
+The 3-digit hex code is a shorthand for some 6-digit hex codes. 
+#fc9; same as #ffcc99 
+
+HSL stands for hue, saturation, and lightness.
+
+Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+Lightness is also a percentage. 0% is black, 50% is neither light or dark, 100% is white
+hsla(hue, saturation, lightness, alpha)
+
+
+
+background image repeat only :
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+
+background-attachment	Sets whether a background image is fixed or scrolls with the rest of the page.
+
+background - Shorthand: putting all in single line.
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+in this order matters
